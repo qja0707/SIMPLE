@@ -1,46 +1,84 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import styles from './page.module.css'
+
+const CENTER_POSITION = 50 // levelBar 중앙 위치 (%)
+const MAX_OFFSET = 50 // levelBar 중앙에서 최대 이동 거리 (%)
+
 export default function SpiritLevel() {
+  const [tilt, setTilt] = useState({ x: 0, y: 0 })
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const handleDeviceOrientation = (event: DeviceOrientationEvent) => {
+      const beta = event.beta || 0
+      const gamma = event.gamma || 0
+      
+      setTilt({ x: gamma, y: beta })
+    }
+
+    if (window.DeviceOrientationEvent) {
+      window.addEventListener('deviceorientation', handleDeviceOrientation)
+      
+      return () => {
+        window.removeEventListener('deviceorientation', handleDeviceOrientation)
+      }
+    }
+  }, [])
+
+  // -90도~90도를 -1~1로 정규화하고 물리적 움직임 시뮬레이션
+  const normalizedTilt = Math.max(-1, Math.min(1, tilt.x / 90))
+  const bubbleOffset = -Math.tanh(normalizedTilt * 6) * MAX_OFFSET
+  
+  const bubbleStyle = {
+    left: `${CENTER_POSITION + bubbleOffset}%`,
+    transform: `translate(-50%, -50%)`
+  }
+
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full mx-4">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <h1 className={styles.title}>
           Spirit Level
         </h1>
         
-        <div className="space-y-6">
+        <div className={styles.content}>
           {/* 수평계 시각화 */}
-          <div className="bg-gray-200 rounded-lg p-6 relative">
-            <div className="w-full h-4 bg-gray-300 rounded-full relative overflow-hidden">
-              {/* 수평선 표시 */}
-              <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-red-500 transform -translate-y-1/2"></div>
+          <div className={styles.levelVisualization}>
+            <div className={styles.levelBar}>
+              {/* 수직선 표시 (왼쪽) */}
+              <div className={`${styles.verticalLine} ${styles.verticalLineLeft}`}></div>
+              
+              {/* 수직선 표시 (오른쪽) */}
+              <div className={`${styles.verticalLine} ${styles.verticalLineRight}`}></div>
               
               {/* 기포 시뮬레이션 */}
-              <div className="absolute top-1/2 left-1/2 w-8 h-8 bg-blue-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 opacity-80">
-                <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+              <div className={styles.bubble} style={bubbleStyle}>
+                <div className={styles.bubbleCenter}></div>
               </div>
             </div>
             
-            {/* 각도 표시 */}
-            <div className="flex justify-between mt-4 text-sm text-gray-600">
-              <span>-5°</span>
-              <span className="font-bold text-green-600">0°</span>
-              <span>+5°</span>
-            </div>
           </div>
           
           {/* 상태 표시 */}
-          <div className="text-center">
-            <div className="text-2xl font-bold text-green-600 mb-2">
-              Level
+          <div className={styles.statusContainer}>
+            <div className={styles.statusText}>
+              Spirit Level
             </div>
-            <p className="text-gray-600">
+            <p className={styles.description}>
               기기를 수평으로 유지하세요
             </p>
+            <div className={styles.tiltInfo}>
+              X: {tilt.x.toFixed(1)}°
+            </div>
           </div>
           
           {/* 사용법 안내 */}
-          <div className="bg-blue-50 rounded-lg p-4">
-            <h3 className="font-semibold text-blue-800 mb-2">사용법</h3>
-            <ul className="text-sm text-blue-700 space-y-1">
+          <div className={styles.instructions}>
+            <h3 className={styles.instructionsTitle}>사용법</h3>
+            <ul className={styles.instructionsList}>
               <li>• 기기를 측정할 표면에 올려놓으세요</li>
               <li>• 파란색 기포가 중앙에 오도록 조정하세요</li>
               <li>• 기포가 중앙에 있으면 수평입니다</li>

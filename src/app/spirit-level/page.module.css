@@ -1,0 +1,140 @@
+:root {
+  --bubble-size: 2.5rem;
+  --line-spacing: calc(var(--bubble-size) / 2);
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  max-width: 28rem;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.levelVisualization {
+  background-color: #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.levelBar {
+  width: 100%;
+  height: 2rem;
+  background-color: #bef264;
+  border-radius: 9999px;
+  position: relative;
+  overflow: hidden;
+}
+
+.verticalLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.125rem;
+  height: 2.5rem;
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.verticalLineLeft {
+  transform: translate(-50%, -50%) translateX(calc(-1 * var(--line-spacing)));
+}
+
+.verticalLineRight {
+  transform: translate(-50%, -50%) translateX(var(--line-spacing));
+}
+
+
+.bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--bubble-size);
+  height: var(--bubble-size);
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #d1d5db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.bubbleCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #d1d5db;
+}
+
+.statusContainer {
+  text-align: center;
+}
+
+.statusText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+}
+
+.tiltInfo {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+  font-family: monospace;
+}
+
+.description {
+  color: #6b7280;
+}
+
+.instructions {
+  background-color: #eff6ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.instructionsTitle {
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.instructionsList {
+  font-size: 0.875rem;
+  color: #1d4ed8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
