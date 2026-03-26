@@ -11,5 +11,23 @@
       "Adjust it until the blue bubble sits in the center.",
       "When the bubble is centered, the surface is level."
     ]
+  },
+  "Navigation": {
+    "appName": "SIMPLE",
+    "description": "Simple Ideas that Make People's Lives Easier",
+    "menuTitle": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "tools": "Tools",
+    "language": "Language",
+    "currentTool": "Current",
+    "openTool": "Open",
+    "items": {
+      "spiritLevel": "Spirit Level"
+    },
+    "locales": {
+      "ko": "한국어",
+      "en": "English"
+    }
   }
 }

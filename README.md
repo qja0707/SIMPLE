@@ -1,3 +1,9 @@
+# SIMPLE
+
+Simple Ideas that Make People's Lives Easier
+
+SIMPLE is a lightweight collection of practical tools designed to stay easy to use on both mobile and desktop.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

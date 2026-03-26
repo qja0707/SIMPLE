@@ -11,5 +11,23 @@
       "파란색 기포가 중앙에 오도록 조정하세요.",
       "기포가 중앙에 있으면 수평입니다."
     ]
+  },
+  "Navigation": {
+    "appName": "SIMPLE",
+    "description": "Simple Ideas that Make People's Lives Easier",
+    "menuTitle": "메뉴",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "tools": "도구",
+    "language": "언어",
+    "currentTool": "현재 도구",
+    "openTool": "열기",
+    "items": {
+      "spiritLevel": "수평계"
+    },
+    "locales": {
+      "ko": "한국어",
+      "en": "English"
+    }
   }
 }

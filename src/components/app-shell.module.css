@@ -1,0 +1,199 @@
+.shell {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #f6f8fb 0%, #eef2f7 100%);
+}
+
+.sidebar {
+  display: none;
+}
+
+.content {
+  min-height: 100vh;
+  position: relative;
+}
+
+.mobileMenuButton {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 30;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.mobileMenuButtonLabel {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background:
+    linear-gradient(180deg, rgba(247, 250, 252, 0.98) 0%, rgba(241, 245, 249, 0.98) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.overlayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0;
+}
+
+.overlayTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+}
+
+.closeButton {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.overlayBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 1.25rem 2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.sectionTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.toolList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toolLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 10px 24px rgba(148, 163, 184, 0.15);
+}
+
+.toolLinkActive {
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+  border-color: rgba(37, 99, 235, 0.28);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.18);
+}
+
+.toolText {
+  font-weight: 600;
+}
+
+.toolMeta {
+  font-size: 0.85rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.localeList {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.localeButton {
+  min-width: 7rem;
+  text-align: center;
+  border-radius: 9999px;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  font-weight: 600;
+}
+
+.localeButtonActive {
+  background: #0f172a;
+  color: #f8fafc;
+  border-color: #0f172a;
+}
+
+.sidebarPanel {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  padding: 2rem 1.25rem;
+  border-right: 1px solid rgba(148, 163, 184, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(248, 250, 252, 0.72) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 2rem;
+}
+
+.brandTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.brandDescription {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+@media (min-width: 1024px) {
+  .shell {
+    display: grid;
+    grid-template-columns: 17.5rem minmax(0, 1fr);
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .mobileMenuButton,
+  .overlay {
+    display: none;
+  }
+}
