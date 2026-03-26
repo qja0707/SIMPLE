@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.5.3",
+    "next": "15.5.9",
     "next-intl": "^4.3.12",
     "prettier": "^3.6.2",
     "react": "19.1.0",
