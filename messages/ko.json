@@ -2,8 +2,9 @@
   "SpiritLevel": {
     "title": "수평계",
     "status": "수평계",
-    "description": "기기를 수평으로 유지하세요.",
+    "description": "기포를 가운데 원에 맞추면 수평입니다.",
     "tiltX": "X: {value}°",
+    "tiltY": "Y: {value}°",
     "instructionsTitle": "사용법",
     "instructions": [
       "기기를 측정할 표면에 올려놓으세요.",

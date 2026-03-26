@@ -2,8 +2,9 @@
   "SpiritLevel": {
     "title": "Spirit Level",
     "status": "Spirit Level",
-    "description": "Keep your device level.",
+    "description": "Center the bubble inside the ring to level the device.",
     "tiltX": "X: {value}°",
+    "tiltY": "Y: {value}°",
     "instructionsTitle": "How to use",
     "instructions": [
       "Place your device on the surface you want to measure.",
