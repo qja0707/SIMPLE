@@ -1,0 +1,14 @@
+{
+  "SpiritLevel": {
+    "title": "Spirit Level",
+    "status": "Spirit Level",
+    "description": "Keep your device level.",
+    "tiltX": "X: {value}°",
+    "instructionsTitle": "How to use",
+    "instructions": [
+      "Place your device on the surface you want to measure.",
+      "Adjust it until the blue bubble sits in the center.",
+      "When the bubble is centered, the surface is level."
+    ]
+  }
+}

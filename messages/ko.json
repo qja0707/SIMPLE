@@ -1,0 +1,14 @@
+{
+  "SpiritLevel": {
+    "title": "수평계",
+    "status": "수평계",
+    "description": "기기를 수평으로 유지하세요.",
+    "tiltX": "X: {value}°",
+    "instructionsTitle": "사용법",
+    "instructions": [
+      "기기를 측정할 표면에 올려놓으세요.",
+      "파란색 기포가 중앙에 오도록 조정하세요.",
+      "기포가 중앙에 있으면 수평입니다."
+    ]
+  }
+}

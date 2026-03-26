@@ -1,9 +1,6 @@
-:root {
+.container {
   --bubble-size: 2.5rem;
   --line-spacing: calc(var(--bubble-size) / 2);
-}
-
-.container {
   min-height: 100vh;
   background-color: #f3f4f6;
   display: flex;
