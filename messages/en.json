@@ -17,6 +17,11 @@
     "status": "Tool",
     "description": "Manage the cleanup tasks you need after arrival in one place."
   },
+  "QrScan": {
+    "title": "Scan QR",
+    "status": "Tool",
+    "description": "Scan a QR code from this page."
+  },
   "Navigation": {
     "appName": "SIMPLE",
     "description": "Simple Ideas that Make People's Lives Easier",
@@ -29,7 +34,8 @@
     "openTool": "Open",
     "items": {
       "spiritLevel": "Spirit Level",
-      "arrivalCleanupService": "Arrival Cleanup Service"
+      "arrivalCleanupService": "Arrival Cleanup Service",
+      "qrScan": "Scan QR"
     },
     "locales": {
       "ko": "한국어",

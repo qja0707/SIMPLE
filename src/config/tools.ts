@@ -12,4 +12,9 @@ export const tools = [
     href: '/arrival-cleanup-service',
     translationKey: 'arrivalCleanupService',
   },
+  {
+    id: 'qr-scan',
+    href: '/qr-scan',
+    translationKey: 'qrScan',
+  },
 ] as const;

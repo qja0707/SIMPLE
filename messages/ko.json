@@ -17,6 +17,11 @@
     "status": "도구",
     "description": "도착 후 qr 찍으면 순서를 기록하는 서비스입니다."
   },
+  "QrScan": {
+    "title": "QR 찍기",
+    "status": "도구",
+    "description": "QR 코드를 찍는 페이지입니다."
+  },
   "Navigation": {
     "appName": "SIMPLE",
     "description": "Simple Ideas that Make People's Lives Easier",
@@ -29,7 +34,8 @@
     "openTool": "열기",
     "items": {
       "spiritLevel": "수평계",
-      "arrivalCleanupService": "도착 정리 서비스"
+      "arrivalCleanupService": "도착 정리 서비스",
+      "qrScan": "QR 찍기"
     },
     "locales": {
       "ko": "한국어",
