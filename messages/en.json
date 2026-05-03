@@ -12,6 +12,11 @@
       "When the bubble is centered, the surface is level."
     ]
   },
+  "ArrivalCleanupService": {
+    "title": "Arrival Cleanup Service",
+    "status": "Tool",
+    "description": "Manage the cleanup tasks you need after arrival in one place."
+  },
   "Navigation": {
     "appName": "SIMPLE",
     "description": "Simple Ideas that Make People's Lives Easier",
@@ -23,7 +28,8 @@
     "currentTool": "Current",
     "openTool": "Open",
     "items": {
-      "spiritLevel": "Spirit Level"
+      "spiritLevel": "Spirit Level",
+      "arrivalCleanupService": "Arrival Cleanup Service"
     },
     "locales": {
       "ko": "한국어",

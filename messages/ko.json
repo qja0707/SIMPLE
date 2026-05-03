@@ -12,6 +12,11 @@
       "기포가 중앙에 있으면 수평입니다."
     ]
   },
+  "ArrivalCleanupService": {
+    "title": "도착 정리 서비스",
+    "status": "도구",
+    "description": "도착 후 qr 찍으면 순서를 기록하는 서비스입니다."
+  },
   "Navigation": {
     "appName": "SIMPLE",
     "description": "Simple Ideas that Make People's Lives Easier",
@@ -23,7 +28,8 @@
     "currentTool": "현재 도구",
     "openTool": "열기",
     "items": {
-      "spiritLevel": "수평계"
+      "spiritLevel": "수평계",
+      "arrivalCleanupService": "도착 정리 서비스"
     },
     "locales": {
       "ko": "한국어",
