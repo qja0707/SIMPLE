@@ -26,7 +26,19 @@
     "cameraButton": "Turn on camera",
     "cameraLoading": "Opening camera",
     "cameraHint": "Allow camera access to scan a QR code.",
-    "cameraError": "Could not open the camera. Check browser permissions."
+    "cameraError": "Could not open the camera. Check browser permissions.",
+    "cameraSecureContextError": "Camera access only works on HTTPS or localhost. Check whether the current HTTPS certificate is trusted.",
+    "cameraUnsupportedError": "This browser does not support the camera API.",
+    "cameraPermissionError": "Camera permission was denied. Allow camera access in browser settings.",
+    "cameraNotFoundError": "No available camera was found.",
+    "cameraInUseError": "The camera is unavailable. Check whether another app or tab is using it.",
+    "scanSubmitting": "QR code detected. Sending the request.",
+    "scanSuccess": "Request sent.",
+    "scanError": "Could not process the QR code. Check the car number and QR data.",
+    "scanInvalidUrl": "The QR URL is not an arrival cleanup API URL.",
+    "scanMissingCarNumber": "Enter the car number first.",
+    "scanMissingEmail": "The QR URL does not include an email value. Regenerate the QR from the arrival cleanup service page.",
+    "scanPostFailed": "The POST request failed."
   },
   "Navigation": {
     "appName": "SIMPLE",

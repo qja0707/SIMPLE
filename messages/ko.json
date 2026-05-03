@@ -26,7 +26,19 @@
     "cameraButton": "카메라 켜기",
     "cameraLoading": "카메라 여는 중",
     "cameraHint": "QR을 찍으려면 카메라 권한을 허용하세요.",
-    "cameraError": "카메라를 열 수 없습니다. 브라우저 권한을 확인하세요."
+    "cameraError": "카메라를 열 수 없습니다. 브라우저 권한을 확인하세요.",
+    "cameraSecureContextError": "카메라는 HTTPS 또는 localhost에서만 사용할 수 있습니다. 현재 주소의 HTTPS 인증서를 신뢰할 수 있는지 확인하세요.",
+    "cameraUnsupportedError": "이 브라우저에서는 카메라 API를 사용할 수 없습니다.",
+    "cameraPermissionError": "카메라 권한이 거부되었습니다. 브라우저 설정에서 권한을 허용하세요.",
+    "cameraNotFoundError": "사용 가능한 카메라를 찾을 수 없습니다.",
+    "cameraInUseError": "카메라를 사용할 수 없습니다. 다른 앱이나 탭에서 카메라를 사용 중인지 확인하세요.",
+    "scanSubmitting": "QR을 인식했습니다. 요청을 보내는 중입니다.",
+    "scanSuccess": "요청을 보냈습니다.",
+    "scanError": "QR 처리에 실패했습니다. 차량번호와 QR 정보를 확인하세요.",
+    "scanInvalidUrl": "QR 주소가 도착 정리 API 주소가 아닙니다.",
+    "scanMissingCarNumber": "차량번호를 먼저 입력하세요.",
+    "scanMissingEmail": "QR 주소에 email 값이 없습니다. 도착 정리 서비스 페이지의 QR을 다시 생성하세요.",
+    "scanPostFailed": "POST 요청이 실패했습니다."
   },
   "Navigation": {
     "appName": "SIMPLE",

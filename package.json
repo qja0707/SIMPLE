@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "html5-qrcode": "^2.3.8",
     "next": "15.5.9",
     "next-intl": "^4.3.12",
     "prettier": "^3.6.2",

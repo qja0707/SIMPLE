@@ -14,8 +14,18 @@ export default async function ArrivalCleanupService({
     requestHeaders.get('x-forwarded-host') ?? requestHeaders.get('host');
   const protocol = requestHeaders.get('x-forwarded-proto') ?? 'http';
   const postPath = `/${locale}/arrival-cleanup-service/api`;
-  const postUrl = host ? `${protocol}://${host}${postPath}` : postPath;
-  const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(postUrl)}`;
+  const postUrl = new URL(
+    postPath,
+    host ? `${protocol}://${host}` : 'http://localhost:3000',
+  );
+  const cleanupEmail = process.env.ARRIVAL_CLEANUP_EMAIL;
+
+  if (cleanupEmail) {
+    postUrl.searchParams.set('email', cleanupEmail);
+  }
+
+  const postUrlText = host ? postUrl.toString() : `${postPath}${postUrl.search}`;
+  const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(postUrlText)}`;
 
   return (
     <div className={styles.container}>
@@ -31,7 +41,7 @@ export default async function ArrivalCleanupService({
             alt='Arrival cleanup service POST API QR code'
           />
         </div>
-        <code className={styles.postUrl}>{postUrl}</code>
+        <code className={styles.postUrl}>{postUrlText}</code>
       </section>
     </div>
   );

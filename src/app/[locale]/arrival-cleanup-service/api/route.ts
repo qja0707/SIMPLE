@@ -62,11 +62,17 @@ export async function POST(request: Request) {
       unixTime,
       carNumber: normalizedCarNumber,
     });
-  } catch {
+  } catch (error) {
+    const errorMessage =
+      error instanceof Error ? error.message : 'Unknown email error.';
+
+    console.error('Failed to send arrival cleanup email:', error);
+
     return NextResponse.json(
       {
         ok: false,
         message: 'Failed to send email.',
+        error: errorMessage,
       },
       { status: 500 },
     );

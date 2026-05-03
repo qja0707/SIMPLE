@@ -70,10 +70,14 @@
   background: #111827;
 }
 
-.cameraVideo {
+.qrReader {
   width: 100%;
   height: 100%;
-  display: block;
+}
+
+.qrReader video {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
 }
 
@@ -110,4 +114,22 @@
   color: #d1d5db;
   font-size: 0.92rem;
   line-height: 1.45;
+}
+
+.resultMessage {
+  margin: 0;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 0.5rem;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  padding: 0.85rem 1rem;
+}
+
+.resultSuccess {
+  border-color: rgba(22, 163, 74, 0.25);
+  background: #f0fdf4;
+  color: #15803d;
 }

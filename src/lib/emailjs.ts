@@ -71,6 +71,8 @@ export async function sendArrivalCleanupEmail({
   if (!response.ok) {
     const message = await response.text();
 
-    throw new Error(`EmailJS request failed: ${message}`);
+    throw new Error(
+      `EmailJS request failed with ${response.status}: ${message}`,
+    );
   }
 }
