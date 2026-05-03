@@ -12,6 +12,27 @@
       "기포가 중앙에 있으면 수평입니다."
     ]
   },
+  "VelogStat": {
+    "title": "Velog Stat Probe",
+    "description": "Velog ID로 요청을 보내고, 이 서비스에 실제로 어떤 쿠키가 들어오는지 확인합니다.",
+    "inputLabel": "Velog ID",
+    "inputPlaceholder": "예: velopert",
+    "submit": "가져오기",
+    "loading": "요청 중...",
+    "helper": "이 테스트는 우리 도메인으로 전달된 쿠키만 볼 수 있습니다. Velog 쿠키가 자동으로 넘어오는지 확인하는 용도입니다.",
+    "empty": "Velog ID를 입력하세요.",
+    "resultTitle": "요청 결과",
+    "requestedUser": "요청한 ID",
+    "probeStatus": "프로브 상태",
+    "velogStatus": "Velog 응답 상태",
+    "cookieNames": "우리 도메인으로 들어온 쿠키 이름",
+    "accessTokenSeen": "access_token 감지 여부",
+    "accessTokenSeenYes": "감지됨",
+    "accessTokenSeenNo": "감지되지 않음",
+    "message": "메시지",
+    "noCookies": "전달된 쿠키 없음",
+    "requestFailed": "요청에 실패했습니다."
+  },
   "Navigation": {
     "appName": "SIMPLE",
     "description": "Simple Ideas that Make People's Lives Easier",
@@ -23,7 +44,8 @@
     "currentTool": "현재 도구",
     "openTool": "열기",
     "items": {
-      "spiritLevel": "수평계"
+      "spiritLevel": "수평계",
+      "velogStat": "Velog Stat"
     },
     "locales": {
       "ko": "한국어",

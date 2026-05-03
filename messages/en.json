@@ -12,6 +12,27 @@
       "When the bubble is centered, the surface is level."
     ]
   },
+  "VelogStat": {
+    "title": "Velog Stat Probe",
+    "description": "Send a request for a Velog username and inspect which cookies actually arrive at this service.",
+    "inputLabel": "Velog ID",
+    "inputPlaceholder": "For example: velopert",
+    "submit": "Fetch",
+    "loading": "Fetching...",
+    "helper": "This test can only see cookies sent to our own origin. It is meant to verify whether Velog cookies are forwarded automatically.",
+    "empty": "Enter a Velog ID.",
+    "resultTitle": "Request Result",
+    "requestedUser": "Requested ID",
+    "probeStatus": "Probe status",
+    "velogStatus": "Velog response status",
+    "cookieNames": "Cookie names received by our origin",
+    "accessTokenSeen": "access_token detected",
+    "accessTokenSeenYes": "Detected",
+    "accessTokenSeenNo": "Not detected",
+    "message": "Message",
+    "noCookies": "No cookies were sent",
+    "requestFailed": "The request failed."
+  },
   "Navigation": {
     "appName": "SIMPLE",
     "description": "Simple Ideas that Make People's Lives Easier",
@@ -23,7 +44,8 @@
     "currentTool": "Current",
     "openTool": "Open",
     "items": {
-      "spiritLevel": "Spirit Level"
+      "spiritLevel": "Spirit Level",
+      "velogStat": "Velog Stat"
     },
     "locales": {
       "ko": "한국어",

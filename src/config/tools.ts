@@ -4,4 +4,9 @@ export const tools = [
     href: '/spirit-level',
     translationKey: 'spiritLevel',
   },
+  {
+    id: 'velog-stat',
+    href: '/velog-stat',
+    translationKey: 'velogStat',
+  },
 ] as const;
