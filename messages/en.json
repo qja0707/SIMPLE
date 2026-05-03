@@ -20,7 +20,13 @@
   "QrScan": {
     "title": "Scan QR",
     "status": "Tool",
-    "description": "Scan a QR code from this page."
+    "description": "Scan a QR code from this page.",
+    "carInputLabel": "Car number",
+    "carPlaceholder": "38어 1778",
+    "cameraButton": "Turn on camera",
+    "cameraLoading": "Opening camera",
+    "cameraHint": "Allow camera access to scan a QR code.",
+    "cameraError": "Could not open the camera. Check browser permissions."
   },
   "Navigation": {
     "appName": "SIMPLE",

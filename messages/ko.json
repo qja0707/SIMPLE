@@ -20,7 +20,13 @@
   "QrScan": {
     "title": "QR 찍기",
     "status": "도구",
-    "description": "QR 코드를 찍는 페이지입니다."
+    "description": "QR 코드를 찍는 페이지입니다.",
+    "carInputLabel": "차량번호",
+    "carPlaceholder": "38어 1778",
+    "cameraButton": "카메라 켜기",
+    "cameraLoading": "카메라 여는 중",
+    "cameraHint": "QR을 찍으려면 카메라 권한을 허용하세요.",
+    "cameraError": "카메라를 열 수 없습니다. 브라우저 권한을 확인하세요."
   },
   "Navigation": {
     "appName": "SIMPLE",
